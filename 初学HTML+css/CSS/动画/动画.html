@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=., initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        div{
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            animation: mydh 5s linear 0s infinite ;
+        }
+
+        div:hover{
+            animation-play-state: paused;
+        }
+
+        @keyframes mydh{
+            0%{
+                background-color: red;
+            }
+
+            50%{
+                background-color: green;
+            }
+
+            100%{
+                background-color: red;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>

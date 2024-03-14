@@ -1,0 +1,30 @@
+{
+  "id": "",
+  "name": "",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "444765",
+      "name": "home",
+      "font_class": "home",
+      "unicode": "e60b",
+      "unicode_decimal": 58891
+    },
+    {
+      "icon_id": "1440660",
+      "name": "home",
+      "font_class": "home1",
+      "unicode": "e653",
+      "unicode_decimal": 58963
+    },
+    {
+      "icon_id": "5776854",
+      "name": "home",
+      "font_class": "home2",
+      "unicode": "e651",
+      "unicode_decimal": 58961
+    }
+  ]
+}

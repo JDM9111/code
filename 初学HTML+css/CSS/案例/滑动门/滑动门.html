@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: #eee;
+        }
+        *{
+            padding: 0%;
+            margin: 0%;
+        }
+        .slide{
+            width: 234px;
+            height: 420px;
+            background-color: rgba(105, 101, 101, 0.6);
+            padding: 20px 0;
+            margin: 100px;
+            position: relative;
+        }
+        .slide ul{
+            list-style: none;
+        }
+        .slide ul li{
+            width: 100%;
+            height: 42px;
+            line-height: 42px;
+            padding-left: 30px;
+            box-sizing: border-box;
+
+
+        }
+
+        .slide ul li a{
+            display: inline-block;
+            text-decoration: none;
+            color: aliceblue;
+
+        }
+        
+        .slide ul li:hover{
+            background-color: #ff6700;
+        }
+
+        .slide-list{
+            width: 992px;
+            height: 458px;
+            background-color: white;
+            position: absolute;
+            top: 0;
+            left: 234px;
+            border: 1px solid  #e0e0e0;
+            border-left: none;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.18);
+            display: none;
+        }
+
+        .slide ul li:hover > .slide-list{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <!--滑动门的结构-->
+    <div class="slide">
+        <ul>
+            <li>
+                <a href="#">手机</a>
+                <div class="slide-list">小米10</div>
+            </li>
+            <li>
+                <a href="#">电脑</a>
+                <div class="slide-list">联想</div>
+            </li>
+            <li>
+                <a href="#">家电</a>
+                <div class="slide-list">海尔</div>
+            </li>
+            <li>
+                <a href="#">服装</a>
+                <div class="slide-list">男装</div>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>

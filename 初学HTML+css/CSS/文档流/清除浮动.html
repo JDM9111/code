@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            width: 500px;
+
+            background-color: #888;
+        }
+
+        .container::after{
+            content: "";
+            display: block;
+            clear: both;
+            
+        }
+
+        .box{
+            width: 100px;
+            height: 100px;
+            background-color: aqua;
+            margin: 5px;
+            float: left;
+        }
+
+        .text{
+            width: 100px;
+            height: 100px;
+            background-color: blueviolet;
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class=" container">
+
+        <div class=" box"></div>
+        <div class=" box"></div>
+        <div class=" box"></div>
+        
+       
+
+    </div>
+    
+    <div class="text"></div>
+   
+    
+</body>
+</html>
+
+<!--
+    浮动会导致父元素塌陷
+    浮动会导致后续元素
+    清除浮动：
+             1.父元素设置高度
+             2.受影响元素添加clear属性
+             3.overflow清除浮动
+             4.伪对象方式
+-->
